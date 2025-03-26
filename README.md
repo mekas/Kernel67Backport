@@ -1,5 +1,8 @@
 # Kernel67Backport Instruction
-There two tasks for this assignment
+Name: .............
+NIM: ..............
+
+There two tasks for this assignment. 
 
 ## Task 1: Kernel Deployment (40%)
 Previously on class, we have mentioned the necessity to deploy the kernel into a VM with FlorentRevest extension. 
@@ -10,7 +13,7 @@ Previously on class, we have mentioned the necessity to deploy the kernel into a
 5. Create a README.md inside which describe what kind of modification you did to make it boot successfully. Don't create README in case of kernel panic. In case of kernel panic score is 0.2. 
 
 ## Task 2: Kernel Backport Patching (60%)
-There are two ways to solve this task: easy way which will net 0.2, and hard way which will net full 0.4. 
+There are two ways to solve this task: easy way which will net 0.2, and hard way which will net full 0.4. Start by creating task2 directory. Submission items related to task 2 will be put into this directory. 
 
 ###Easy Way (0.3)
 1. Start from Kernel 6.6. Tag
@@ -28,4 +31,6 @@ There are two ways to solve this task: easy way which will net 0.2, and hard way
 2. Conduct git diff to know changes needed to the current tag. It will be much larger compared to the easy way. Therefore the trick here is to pick suitable commit\_id. How to do that I leave it to you. 
 3. Properly understand your commit target by running and examining detailed git log, git show, and git diff. Not all changes are really related to the feature. It will be up to you to identify which changes of the commit will be integrated into the base repo. 
 4. Merge the necessary changes to your repo. Then commit, but don't push. 
-
+5. Find your own local commit by running Git Log again. 
+6. Run git diff <your_current_commit_id> tags/v6.6 > patch\_hard.diff
+7. Create a README which shown your self reflection regarding task 2 completion
